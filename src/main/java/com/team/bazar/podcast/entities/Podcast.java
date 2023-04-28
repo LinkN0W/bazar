@@ -1,14 +1,13 @@
 package com.team.bazar.podcast.entities;
 
 import com.team.bazar.category.Category;
-import com.team.bazar.roles.entities.Author;
+import com.team.bazar.members.entities.Author;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Cascade;
 
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
@@ -17,9 +16,6 @@ import java.util.UUID;
 @Getter
 @Setter
 public class Podcast {
-
-
-
 
     @Id
     @GeneratedValue()
@@ -68,20 +64,6 @@ public class Podcast {
 
     }
 
-
-
-
-    /* @JsonCreator
-    public static Podcast of(@JsonProperty("dateLoad") Date dateLoad,
-                             @JsonProperty("description") String description,
-                             @JsonProperty("trackPath") String trackPath,
-                             @JsonProperty("coverPath") String coverPath,
-                             @JsonProperty("category") String categoryId){
-        Podcast podcast = new Podcast();
-
-        podcast.setCategory();
-
-    }*/
 
 
 }

@@ -1,15 +1,10 @@
-package com.team.bazar.roles.controllers;
+package com.team.bazar.members.controllers;
 
 
-import com.team.bazar.podcast.dto.PodcastDTO;
-import com.team.bazar.roles.entities.Author;
-import com.team.bazar.roles.servicies.AuthorService;
+import com.team.bazar.members.entities.Author;
+import com.team.bazar.members.servicies.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping(path = "api/role")
@@ -32,9 +27,8 @@ public class RoleController {
 
     @PostMapping("/new")
     public Author save(@RequestBody Author author){
-        System.out.println(author.getTitle());
-        Author authors = authorService.save(author);
 
+        Author authors = authorService.save(author);
         return authors;
     }
 }

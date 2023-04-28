@@ -1,11 +1,9 @@
-package com.team.bazar.roles.repositories;
+package com.team.bazar.members.repositories;
 
-import com.team.bazar.podcast.entities.Podcast;
-import com.team.bazar.roles.entities.Author;
+import com.team.bazar.members.entities.Author;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.UUID;
 
 @Repository

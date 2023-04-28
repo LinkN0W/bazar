@@ -1,7 +1,7 @@
 package com.team.bazar.podcast.repositories;
 
 import com.team.bazar.podcast.entities.Podcast;
-import com.team.bazar.roles.entities.Author;
+import com.team.bazar.members.entities.Author;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

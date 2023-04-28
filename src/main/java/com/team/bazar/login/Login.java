@@ -13,7 +13,7 @@ import java.util.UUID;
 @Table(name = "logins")
 @Getter
 @Setter
-public class Logins {
+public class Login {
 
     public static enum UserRole {
         ADMIN, USER, AUTHOR;

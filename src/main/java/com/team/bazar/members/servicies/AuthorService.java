@@ -1,8 +1,8 @@
-package com.team.bazar.roles.servicies;
+package com.team.bazar.members.servicies;
 
 import com.team.bazar.podcast.entities.Podcast;
-import com.team.bazar.roles.entities.Author;
-import com.team.bazar.roles.repositories.AuthorRepository;
+import com.team.bazar.members.entities.Author;
+import com.team.bazar.members.repositories.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
