@@ -1,5 +1,6 @@
 package com.team.bazar.members.entities;
 
+import com.team.bazar.users.User;
 import jakarta.persistence.*;
 
 import java.util.UUID;

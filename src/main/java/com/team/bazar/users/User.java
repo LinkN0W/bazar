@@ -1,12 +1,17 @@
-package com.team.bazar.members.entities;
+package com.team.bazar.users;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @Table(name = "users")
-
+@Builder
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class User  {
 
 
@@ -26,12 +31,13 @@ public class User  {
 
     private String email;
 
-    private String login;
+
+    private String name;
 
     private String password;
 
+    @Builder.Default
     private UserRole role = UserRole.USER;
-
 
 
 }

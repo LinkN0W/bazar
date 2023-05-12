@@ -2,6 +2,7 @@ package com.team.bazar.members.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.team.bazar.podcast.entities.Podcast;
+import com.team.bazar.users.User;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
