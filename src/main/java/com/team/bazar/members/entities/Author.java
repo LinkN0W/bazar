@@ -22,6 +22,7 @@ public class Author implements Member{
 
     private String description;
 
+    @Column(name = "profile_photo_path")
     private String photo_path;
 
     @OneToOne()
@@ -32,6 +33,12 @@ public class Author implements Member{
     @JsonIgnore
     @OneToMany(mappedBy = "author")
     private List<Podcast> podcasts;
+
+    public Author(User user) {
+    }
+    public Author() {
+    }
+
 
     @Override
     public String getDescription() {

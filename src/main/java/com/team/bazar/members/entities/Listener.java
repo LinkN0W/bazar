@@ -2,6 +2,9 @@ package com.team.bazar.members.entities;
 
 import com.team.bazar.users.User;
 import jakarta.persistence.*;
+import lombok.Builder;
+import org.springframework.lang.NonNull;
+
 
 import java.util.UUID;
 
@@ -21,9 +24,19 @@ public class Listener  implements Member{
     private String photo_path;
 
 
+
+
     @OneToOne()
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+
+    public Listener(User user) {
+        this.user = user;
+    }
+
+    public Listener() {
+
+    }
 
     @Override
     public String getDescription() {
